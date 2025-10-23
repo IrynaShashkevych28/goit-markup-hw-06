@@ -1,3 +1,9 @@
+.hide{
+  display: none;
+}
+
+
+
 * {
   box-sizing: border-box;
 }
@@ -26,11 +32,31 @@ img {
   max-width: 100%;
   height: auto;
 }
+/*Media container*/
 .container {
-  margin: 0 auto;
-  padding: 0 15px;
-  width: 1158px;
+max-width: 320px;
+margin-left: auto;
+margin-right: auto;
+padding-right: 16px;
+padding-left: 16px;
 }
+/*tablet*/
+@media screen and (min-width: 768px) {
+  .container{
+    max-width: 768px;
+  }
+}
+
+/*desktop*/
+@media screen and (min-width: 1158px) {
+  .container{
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }  
+}
+
+
 section {
   padding-bottom: 120px;
   padding-top: 120px;
@@ -72,6 +98,12 @@ section {
   list-style-type: none;
   display: flex;
   gap: 40px;
+}
+@media screen and (max-width: 767px) {
+  .nav-list{
+    display: none;
+  }
+  
 }
 
 .nav-link {
@@ -124,6 +156,12 @@ address {
   display: flex;
   gap: 40px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 767px) {
+  .address-list{
+    display: none;
+  }
+  
 }
 .contact-link {
   color: #434455;
@@ -741,9 +779,7 @@ color: #8e8f99;
   border: none;
   fill: #F4F4FD;
 }
-.agreement-checkbox-icon {
-  
-}
+
 .agreement-link-accent-text {
   text-decoration: underline;
   text-decoration-skip-ink: none;
