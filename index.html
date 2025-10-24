@@ -27,6 +27,11 @@
           <a href="./index.html" class="logo"
             >Web<span class="logo-accent">Studio</span></a
           >
+          <button class="mobile-menu-btn" type="button" aria-label="Open-menu button">
+            <svg class="mobile-menu-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
           <ul class="nav-list">
             <li><a href="./index.html" class="nav-link current">Studio</a></li>
             <li><a href="" class="nav-link">Portfolio</a></li>
@@ -596,6 +601,7 @@
     </footer>
     <!--Modal Window-->
     <div class="backdrop hide">
+
       <div class="modal">
         <button class="modal-btn" type="button">
           <svg class="modal-btn-icon" width="8" height="8">
@@ -684,6 +690,89 @@
 
           <button class="btn hero-btn" type="submit">Send</button>
         </form>
+      </div>
+    </div>
+    <!---Mobile Window Menu-->
+    <div class="mobile-menu is-open">
+      <div class="container">
+        <button class="mobile-menu-btn">
+           <svg class="mobile-menu-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu-nav">
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="#">Studio</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="#">Portfolio</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="#">Contacts</a>
+          </li>
+        </ul>
+        <ul class="mobile-menu-contacts">
+       <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="tel:110001111111">+11 (000) 111-11-11</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="socials-link">
+                  <li class="mobile-menu-socials">
+                    <a
+                      class="team-link"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="link to instagram"
+                    >
+                      <svg class="team-icons" width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials-team-links">
+                    <a
+                      class="team-link"
+                      href="https://x.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="link to twitter"
+                    >
+                      <svg class="team-icons" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials-team-links">
+                    <a
+                      class="team-link"
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="link to facebook"
+                    >
+                      <svg class="team-icons" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials-team-links">
+                    <a
+                      class="team-link"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="link to linkedin"
+                    >
+                      <svg class="team-icons" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
       </div>
     </div>
   </body>
