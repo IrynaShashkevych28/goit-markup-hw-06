@@ -210,28 +210,60 @@ address {
 }
 .hero {
   max-width: 1440px;
-  height: 600px;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   margin: 0 auto;
   background-color: #2e2f42;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding: 72px 52px;
   background-image:
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/hero/people-office-1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
 }
 
 .hero-title {
   max-width: 496px;
   color: #ffffff;
   text-align: center;
-  font-size: 56px;
-  letter-spacing: 0.02em;
   line-height: 1.07;
   margin: auto;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
+  
+  font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+
+
+}
+@media only screen and (min-width: 768px) {
+  .hero{
+    min-height: 436px;
+  }
+   .hero-title{
+   
+font-size: 56px;
+line-height: 1.07;
+letter-spacing: 0.02em;
+margin-bottom: 36px;
+    
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero{
+    min-height: 600px;
+        padding-top: 188px;
+  padding-bottom: 188px;
+  }
+   .hero-title{
+    margin-bottom: 48px;
+  }
 }
 .hero-btn {
   font-family: "Roboto", sans-serif;
@@ -262,10 +294,28 @@ address {
   text-align: left;
 }
 .features-list {
-  list-style: none;
+  display: flex;
+ flex-wrap: wrap;
+ text-align: center;
+ gap: 72px;
+
+}
+@media only screen and (min-width: 768px) {
+   .features-list{
+display: flex;
+flex-wrap: wrap;
+gap: 72px 24px;
+ 
+    
+  }
+}
+@media only screen and (min-width: 1440px) {
+   .features-list {
+      list-style: none;
   display: flex;
   gap: 24px;
   justify-content: center;
+  }
 }
 .features-icon-box {
   width: auto;
@@ -280,21 +330,65 @@ address {
   align-items: center;
   justify-content: center;
 }
+@media only screen and (max-width: 1439px) {
+   .features-icon-box{
+    display: none;
+    
+  }
+}
 
 .features-title {
-  font-weight: 500;
-  font-size: 20px;
+  text-align: center;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  line-height: 1.2;
   margin-bottom: 8px;
+  
+font-size: 36px;
+line-height: 1.11;
 }
+@media only screen and (min-width: 768px) {
+   .features-title{
+    text-align: left;
+
+    
+  }
+}
+@media only screen and (min-width: 1440px) {
+   .features-title{
+    text-align: left;
+     font-weight: 500;
+  font-size: 20px;
+line-height: 1.2;
+font-weight: 500;
+
+
+  }
+}
+
+
 .features-text {
-  font-weight: 400;
+  width: 288px;
+  text-align: left;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
   font-size: 16px;
+
+}
+
+    
+@media only screen and (min-width: 768px) {
+   .features-text{
+    /* width: 356px; */
+    
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+   .features-text{
+    font-weight: 400;
+
+  }
 }
 /* Team-section */
 .team {
