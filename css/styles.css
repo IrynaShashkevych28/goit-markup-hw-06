@@ -665,9 +665,11 @@ font-weight: 500;
   line-height: 1.17;
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
+  
 }
 @media only screen and (min-width: 768px) {
    .footer-link{
+  
     
   }
 }
@@ -681,13 +683,15 @@ font-weight: 500;
 
 @media only screen and (min-width: 768px) {
    .footer-link-wrapper{
-    margin-right: 0;
     margin-left: 108px;
+    align-items: baseline;
+    
    
   }
 }
 @media only screen and (min-width: 1158px) {
    .footer-link-wrapper{
+    margin-left: 0;
      margin-right: 120px;
   }
 }
@@ -701,11 +705,17 @@ font-weight: 500;
 }
 
 .footer-paragraph {
-  max-width: 264px;
+  
   color: #f4f4fd;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+@media only screen and (min-width: 768px) {
+   .footer-paragraph{
+    max-width: 264px;
+    
+  }
 }
 .footer-media {
   display: flex;
@@ -761,16 +771,44 @@ text-align: center;
   margin-left: auto;
   
 }
+
+@media only screen and (min-width: 768px) {
+   .footer-subscribe-form{
+    margin-left: 108px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+   .footer-subscribe-form{
+    margin-left: auto;
+  }
+}
 .footer-subscribe-form-text{
 margin-bottom: 16px;
 letter-spacing: 0.02em;
 color: #ffffff;
 font-weight: 500;
+text-align: center;
+}
+@media only screen and (min-width: 768px) {
+   .footer-subscribe-form-text{
+    margin-left: 0;
+    text-align: left;
+  }
 }
 .footer-form{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: 16px;
+}
+@media only screen and (min-width: 768px) {
+   .footer-form{
+flex-wrap: nowrap;
+gap: 24px;
+    
+  }
 }
 .footer-modal-form-input{
 width: 264px;
@@ -785,8 +823,10 @@ font-size: 12px;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 border: 1px solid rgb(255, 255, 255);
 border-radius: 4px;
+opacity: 0.3;
 
 }
+
 .footer-modal-form-input::placeholder{
   color: #ffffff;
 }
@@ -818,7 +858,7 @@ letter-spacing: 0.04em;
 }
 .footer-subscribe-icon{
   fill: currentColor;
-  margin-left: 16px;
+  
 
   
 }
