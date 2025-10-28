@@ -837,7 +837,7 @@ font-size: 12px;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 border: 1px solid rgb(255, 255, 255);
 border-radius: 4px;
-opacity: 0.3;
+/* opacity: 0.3; */
 
 }
 
@@ -896,11 +896,7 @@ letter-spacing: 0.04em;
               transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: opacity, visibility;
 }
-@media only screen and (max-width: 757px) {
-   .backdrop{
-    display: none;
-  }
-}
+
 .backdrop.is-open {
   opacity: 1;
   
@@ -925,6 +921,13 @@ letter-spacing: 0.04em;
   padding-right: 24px;
 
    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media only screen and (max-width: 767px) {
+   .modal{
+    width: 288px;
+    min-height: 623px;
+    
+  }
 }
 .backdrop.is-open .modal {
   opacity: 1;
