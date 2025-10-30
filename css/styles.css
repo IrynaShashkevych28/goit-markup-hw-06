@@ -301,7 +301,6 @@ letter-spacing: 0.04em;
   line-height: 1.07;
   margin: auto;
   margin-bottom: 72px;
-  
   font-weight: 700;
 font-size: 36px;
 line-height: 1.11;
@@ -309,10 +308,7 @@ line-height: 1.11;
 
 }
 @media only screen and (min-width: 768px) {
- 
-  }
-   .hero-title{
-   
+   .hero-title{   
 font-size: 56px;
 line-height: 1.07;
 letter-spacing: 0.02em;
@@ -719,29 +715,44 @@ font-weight: 500;
   margin: 0;
 }
 /* Footer */
+
 .site-footer {
   background-color: #2e2f42;
-  padding: 100px 0;
+  padding: 96px 0;
 }
 @media only screen and (min-width: 768px) {
    .site-footer{
-    padding: 0;
+    padding: 96px 0;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .site-footer {
+    padding: 100px 0;
   }
 }
 .site-footer .container {
   display: flex;
+  align-items: center;
+  text-align: center;
   flex-wrap: wrap;
-  align-items: baseline;
+  justify-content: center;
+ 
   
 }
-@media only screen and (min-width: 768px)  and (max-width:1157){
+
+@media only screen and (min-width: 768px) and (max-width:1157) {
    .site-footer .container{
+    
      max-width: 768px;
   padding-left: 0;
   padding-right: 0;
- 
+  gap: 67px 24px;
+  
+  
   }
+
 }
+
 @media only screen and (min-width: 1158px) {
    .site-footer .container{
     flex-wrap: nowrap;
@@ -769,8 +780,12 @@ font-weight: 500;
 
 @media only screen and (min-width: 768px) {
    .footer-link-wrapper{
-    margin-left: 108px;
-    align-items: baseline;
+    /* margin-left: 108px; */
+    align-items: flex-start;
+    text-align: left;
+    margin: 0;
+    
+    
     
    
   }
@@ -797,12 +812,13 @@ font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
    .footer-paragraph{
     max-width: 264px;
     
   }
 }
+
 .footer-media {
   display: flex;
   align-items: center;
@@ -812,13 +828,16 @@ font-weight: 500;
 .footer-media a {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-@media only screen and (max-width: 1157px) {
+.social-text-wrapper{
+  padding: 72px 40px;
+}
+@media only screen and (min-width: 768px) {
    .social-text-wrapper{
-  padding: 96px 40px;
+    padding: 0;
     
   }
 }
+
 .social-text {
   font-size: 16px;
   line-height: 1.5;
@@ -826,13 +845,7 @@ font-weight: 500;
   color: #ffffff;
   display: block;
   margin-bottom: 16px;
-text-align: center;
-}
-@media only screen and (min-width: 768px) {
-   .social-text{
-    text-align: left;
-    
-  }
+
 }
 
 .social-media-link {
@@ -854,22 +867,13 @@ text-align: center;
   fill: #f4f4fd;
   display: block;
 }
-.footer-subscribe-form{
-  margin-left: auto;
-  
-}
 
-@media only screen and (min-width: 768px) {
-   .footer-subscribe-form{
-    margin-left: 108px;
-    padding-bottom: 96px;
-  }
-}
+
 
 @media only screen and (min-width: 1158px) {
    .footer-subscribe-form{
-    margin-left: auto;
-    padding-bottom: 0:
+    
+    padding-bottom: 0;
   }
 }
 .footer-subscribe-form-text{
