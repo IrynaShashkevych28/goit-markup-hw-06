@@ -113,7 +113,13 @@ text-transform: uppercase;
   font-family: "Roboto", sans-serif;
 }
 
-
+@media only screen and (min-width: 768px) {
+   .mobile-menu-btn{
+   
+    display: none;
+    
+  }
+}
 @media screen and (max-width: 767px) {
   .nav-list{
     display: none;
@@ -1023,6 +1029,7 @@ letter-spacing: 0.04em;
     width: 288px;
     min-height: 623px;
     
+}
 }
 @media only screen and (min-width: 768px) {
    .modal{
